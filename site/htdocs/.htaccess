@@ -1,0 +1,8 @@
+SetEnv APP_ENV product
+DirectoryIndex index.php
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !\.(pdf|ico|gif|jpg|png|css|html|xml|js)$ index.php
